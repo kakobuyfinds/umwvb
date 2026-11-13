@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f6f2ea">
+  <title>RizzitGO spreadsheet | Categorie, taglie e foto QC</title>
+  <meta name="description" content="Esplora dieci categorie su CAFANS e usa la guida al RizzitGO spreadsheet per confrontare taglie, leggere le foto QC e stimare la spedizione verso l’Italia.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="RizzitGO spreadsheet | Categorie, taglie e foto QC">
+  <meta property="og:description" content="Dieci categorie su CAFANS e una guida pratica per confrontare misure, foto QC e costi di spedizione in Italia.">
+  <meta property="og:image" content="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto%2Cq_auto%3Aeco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-GjGXSP.png">
+  <!--
+    index.html
+    Note editoriali: la SERP diretta di Bing non era accessibile durante la ricerca.
+    I risultati web consultati non rappresentano una top 10 Bing verificata.
+    Riferimenti consultati e temi rilevati:
+    ssfinds.com/rizzitgo-spreadsheet — categorie, foto QC, guida introduttiva
+    rizzitgo-spreadsheets.com — ricerca nel catalogo, foto QC
+    rizzitgospreadsheets.net — elenchi web, categorie W2C
+    www.rizzitgo.org — definizione, categorie, foto
+    www.rizzitgo.info — elenco per categoria, domande introduttive
+    zentbuyspreadsheet.com/rizzitgo-spreadsheet — schede, accessori, QC
+    rizzitgolink.com — categorie e riferimenti alle foto
+    spreadsheetrizzitgo.com — guide di spedizione per destinazione
+    rep.tools/guides/rizzitgo-spreadsheet — struttura di un elenco e controlli sui link
+    rizzitgopicklist.com — ricerca per categoria e confronto delle varianti
+    Temi secondari: scarpe RizzitGO, foto QC RizzitGO, guida taglie sneaker,
+    spedizione RizzitGO in Italia, link ai prodotti RizzitGO.
+    Query long-tail coperte dalla guida:
+    come usare un RizzitGO spreadsheet; dove portano i link del RizzitGO spreadsheet;
+    come controllare un link prodotto; come verificare la variante di colore;
+    come confrontare due schede prodotto; come misurare la soletta di una sneaker;
+    come scegliere la taglia delle sneakers; come leggere la tabella taglie di una felpa;
+    come misurare una T-shirt distesa; come misurare la vita dei pantaloni;
+    come scegliere la taglia di un completo; come misurare la circonferenza di un cappellino;
+    cosa controllare nelle foto QC RizzitGO; come confrontare suola e tomaia;
+    come leggere le misure nelle foto QC; foto QC e autenticità di un prodotto;
+    come controllare la chiusura di una collana; come leggere le dimensioni di un foulard;
+    come stimare la spedizione RizzitGO in Italia; differenza tra peso reale e volumetrico;
+    come confrontare due preventivi di spedizione; quali costi verificare prima di ordinare;
+    come controllare le condizioni di reso; come organizzare una lista di acquisti.
+  -->
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f2ea;
+      --surface: #fffcf6;
+      --ink: #22241e;
+      --muted: #56584d;
+      --line: #d5cabc;
+      --accent: #84341f;
+      --wash: #ecd8c8;
+      --dark: #2b3327;
+      --radius: 14px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    a { color: var(--accent); }
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid #216485;
+      outline-offset: 4px;
+    }
+    img { display: block; width: 100%; height: auto; }
+    figure, h1, h2, h3, p { margin: 0; }
+    h1, h2, h3 { line-height: 1.13; }
+    h1, h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 600;
+    }
+    h1 { font-size: clamp(2.65rem, 7vw, 5.7rem); letter-spacing: -.055em; }
+    h2 { font-size: clamp(2rem, 4.4vw, 3.5rem); letter-spacing: -.04em; }
+    h3 { font-size: 1.2rem; }
+    p + p { margin-top: .8rem; }
+    .shell { width: min(1120px, calc(100% - 2rem)); margin-inline: auto; }
+    .top { border-bottom: 1px solid var(--line); }
+    .top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 60px;
+    }
+    .brand {
+      color: var(--ink);
+      font-size: 1.15rem;
+      font-weight: 850;
+      letter-spacing: .13em;
+      text-decoration: none;
+    }
+    .top-row span { color: var(--muted); font-size: .9rem; }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr);
+      align-items: center;
+      gap: clamp(1rem, 4vw, 3.5rem);
+      padding-block: clamp(1.75rem, 5vw, 3.5rem) 1.5rem;
+    }
+    .hero p { max-width: 53ch; margin-top: 1rem; color: var(--muted); }
+    .hero figure {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+    .hero img { aspect-ratio: 2/1; object-fit: cover; object-position: center 51%; }
+    figcaption { padding: .55rem .85rem; font-size: .875rem; color: var(--muted); }
+    .category-panel {
+      padding: clamp(.9rem, 3vw, 1.5rem);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--wash);
+    }
+    .category-panel h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: .8rem; }
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: .5rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .category-grid a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .35rem;
+      min-height: 48px;
+      height: 100%;
+      padding: .58rem .7rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      color: var(--ink);
+      font-size: .9rem;
+      font-weight: 680;
+      line-height: 1.3;
+      text-decoration: none;
+    }
+    .category-grid a:hover { border-color: var(--accent); color: var(--accent); }
+    .arrow { color: var(--accent); }
+    .section { padding-block: clamp(2.4rem, 6vw, 4.2rem); }
+    .section-intro { margin-top: .75rem; max-width: 68ch; color: var(--muted); }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: .75rem;
+      margin-top: 1.25rem;
+    }
+    .gallery figure {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+    .gallery img { aspect-ratio: 1; object-fit: contain; background: #fbfbfb; }
+    .gallery figcaption strong { display: block; color: var(--ink); }
+    .guide { background: var(--dark); color: var(--surface); }
+    .guide .section-intro { color: #f0e6d8; }
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .8rem;
+      margin-top: 1.25rem;
+    }
+    .articles article {
+      padding: clamp(1rem, 3vw, 1.6rem);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--ink);
+    }
+    .articles h3 { margin-bottom: .65rem; }
+    .articles p { color: var(--muted); }
+    .faq { margin-top: 1.15rem; border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary {
+      padding: .9rem .35rem;
+      cursor: pointer;
+      color: var(--ink);
+      font-weight: 720;
+    }
+    details p { max-width: 72ch; padding: 0 .35rem 1rem; color: var(--muted); }
+    footer { border-top: 1px solid var(--line); padding-block: 1.15rem; }
+    footer a { font-weight: 700; text-underline-offset: .18em; }
+    @media (max-width: 850px) {
+      .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 580px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero img { aspect-ratio: 2.6/1; }
+      .category-grid, .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .articles { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "#pagina",
+        "name": "RizzitGO spreadsheet | Categorie, taglie e foto QC",
+        "description": "Esplora dieci categorie su CAFANS e usa la guida al RizzitGO spreadsheet per confrontare taglie, leggere le foto QC e stimare la spedizione verso l’Italia.",
+        "inLanguage": "it",
+        "mainEntity": {"@id": "#domande"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#domande",
+        "inLanguage": "it",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Che cos’è un RizzitGO spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "È una raccolta di riferimenti a prodotti, in un foglio o in un catalogo web, spesso organizzata per categoria. Ogni scheda può includere un link al prodotto, informazioni sulle varianti e foto del controllo qualità."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Dove portano i link di questa guida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I collegamenti di categoria aprono le rispettive sezioni del catalogo CAFANS. I collegamenti generali aprono la homepage di CAFANS."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come scelgo la taglia delle sneakers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Misura in centimetri la soletta estraibile di una scarpa che ti calza bene e confrontala con la misura dichiarata per la variante selezionata. Se la scheda indica la lunghezza del piede, usa quella misura per il confronto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Che cosa posso verificare con le foto QC?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le foto QC mostrano caratteristiche visibili come colore, cuciture, suola e accessori inclusi. Una foto con un righello aiuta a leggere le dimensioni. L’autenticità richiede verifiche sulla provenienza e sul venditore."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come stimo la spedizione in Italia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Inserisci il CAP di consegna e confronta i preventivi usando peso e dimensioni del pacco imballato. Verifica quali voci sono incluse e controlla gli eventuali costi di importazione prima di confermare."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/umwvb/">
+</head>
+<body>
+  <header class="top">
+    <div class="shell top-row">
+      <a class="brand" href="https://www.cafans.com">CAFANS</a>
+      <span>Guida agli acquisti</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="shell">
+      <section class="hero" aria-labelledby="titolo">
+        <div>
+          <h1 id="titolo">RizzitGO spreadsheet</h1>
+          <p>Parti da una categoria su CAFANS e prepara la tua lista di acquisti. La guida ti aiuta a confrontare le taglie, leggere le foto del controllo qualità e stimare il costo totale di una consegna in Italia.</p>
+        </div>
+        <figure>
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto%2Cq_auto%3Aeco/3cc96f43-47b6-43cb-951d-d8f73bb2f912/air-force-1-07-shoes-GjGXSP.png"
+               width="720" height="360" fetchpriority="high" loading="eager"
+               alt="Sneaker Nike Air Force 1 ’07 bianca vista di lato">
+          <figcaption>Nike Air Force 1 ’07 · esempio di profilo laterale</figcaption>
+        </figure>
+      </section>
+
+      <nav class="category-panel" aria-labelledby="categorie">
+        <h2 id="categorie">Categorie CAFANS</h2>
+        <ul class="category-grid">
+          <li><a href="https://cafans.com/category-911-Shoes.html">Scarpe <span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Felpe e maglioni <span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirt <span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-914-Jackets.html">Giacche <span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Pantaloni e shorts <span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-916-Headwear.html">Cappelli e berretti <span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-917-Sets.html">Completi <span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Intimo <span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-919-Jersey.html">Maglie sportive <span class="arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://cafans.com/category-920-Accessories.html">Accessori <span class="arrow" aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+
+      <section class="section" aria-labelledby="foto">
+        <h2 id="foto">I dettagli da cercare nelle foto</h2>
+        <p class="section-intro">Usa queste immagini illustrative come riferimento per capire quali inquadrature chiedere. Per disponibilità e varianti, consulta la singola scheda prodotto.</p>
+        <div class="gallery">
+          <figure>
+            <img src="https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_b6bff721-6c72-4cbb-91ff-a5e3de2dabd7_1920x.jpg?v=1694769772&amp;width=420"
+                 width="420" height="420" loading="lazy" decoding="async"
+                 alt="Felpa Nike Sportswear Club Fleece nera con cappuccio">
+            <figcaption><strong>Felpa Nike</strong>Controlla polsini, fondo e tasca.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-denim-cap--M5451M_PM1_Worn%20view.png?hei=480&amp;wid=480"
+                 width="480" height="480" loading="lazy" decoding="async"
+                 alt="Cappellino Louis Vuitton in denim verde con motivo Monogram, indossato">
+            <figcaption><strong>Cappellino Louis Vuitton</strong>Osserva la curvatura della visiera.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg"
+                 width="640" height="640" loading="lazy" decoding="async"
+                 alt="Cappellino da baseball Gucci in tela beige con motivo GG">
+            <figcaption><strong>Cappellino Gucci</strong>Chiedi una foto del cinturino e la circonferenza.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://assets.hermes.com/is/image/hermesproduct/%E3%82%AB%E3%83%AC-90-%E3%80%8A%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AF%E9%9E%8D%E3%81%AE%E4%B8%AD%E3%81%AB%E3%80%8B--004204S%2001-flat-wm-3-0-0-800-800_g.jpg"
+                 width="800" height="800" loading="lazy" decoding="async"
+                 alt="Foulard quadrato Hermès Carré 90 con stampa a tema equestre">
+            <figcaption><strong>Foulard Hermès</strong>Verifica il bordo e le dimensioni da aperto.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://assets.christiandior.com/is/image/diorprod/N2241WOMCYD03S_SBG_E01-2?%24r9x10_raw%24=&amp;crop=0%2C0%2C4000%2C5000&amp;hei=520&amp;wid=480"
+                 width="480" height="520" loading="lazy" decoding="async"
+                 alt="Collana Dior Petit CD color oro con cristalli argentati">
+            <figcaption><strong>Collana Dior</strong>Controlla la chiusura e la lunghezza regolabile.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
+
+    <section class="section guide" aria-labelledby="guide">
+      <div class="shell">
+        <h2 id="guide">Dal catalogo alla lista acquisti</h2>
+        <p class="section-intro">Quattro controlli da fare quando confronti scarpe, abbigliamento e accessori trovati in uno spreadsheet.</p>
+
+        <div class="articles">
+          <article aria-labelledby="schede">
+            <h3 id="schede">Link, varianti e disponibilità</h3>
+            <p>Quando confronti due schede, salva il nome del modello e la combinazione esatta di taglia e colore. Apri il link della scheda e controlla che mostri ancora la variante scelta. Per un completo, verifica che siano inclusi entrambi i pezzi e controlla se puoi selezionare due taglie diverse.</p>
+          </article>
+
+          <article aria-labelledby="taglie">
+            <h3 id="taglie">Misure per scarpe e abbigliamento</h3>
+            <p>Per le scarpe, confronta la lunghezza della soletta con quella di un paio che usi già. Per una T-shirt o una felpa, stendi un capo simile e misura la larghezza da ascella ad ascella e la lunghezza dalla spalla al fondo. Per i pantaloni, controlla se la tabella indica la larghezza della vita in piano o la circonferenza completa.</p>
+          </article>
+
+          <article aria-labelledby="controllo-qualita">
+            <h3 id="controllo-qualita">Foto QC prima della spedizione</h3>
+            <p>Confronta le immagini della variante scelta con le foto di controllo qualità, se disponibili. Per le sneaker cerca un profilo laterale, una vista della suola e un dettaglio della tomaia. Per capi e accessori, chiedi un primo piano delle cuciture o della chiusura e una foto con il metro leggibile per le misure che contano.</p>
+          </article>
+
+          <article aria-labelledby="spedizione">
+            <h3 id="spedizione">Preventivo di spedizione verso l’Italia</h3>
+            <p>Per confrontare due preventivi, usa lo stesso CAP di consegna e le stesse dimensioni del collo. Chiedi se la tariffa usa il peso reale o quello volumetrico, calcolato a partire dall’ingombro. Verifica le spese di servizio, gli eventuali costi di importazione e le condizioni di reso prima di confermare l’ordine.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell section" id="domande" aria-labelledby="faq">
+      <h2 id="faq">Domande frequenti</h2>
+      <div class="faq">
+        <details open>
+          <summary>Che cos’è un RizzitGO spreadsheet?</summary>
+          <p>È una raccolta di riferimenti a prodotti, in un foglio o in un catalogo web, spesso organizzata per categoria. Ogni scheda può includere un link al prodotto, informazioni sulle varianti e foto del controllo qualità.</p>
+        </details>
+        <details>
+          <summary>Dove portano i link di questa guida?</summary>
+          <p>I collegamenti di categoria aprono le rispettive sezioni del catalogo CAFANS. I collegamenti generali aprono la homepage di CAFANS.</p>
+        </details>
+        <details>
+          <summary>Come scelgo la taglia delle sneakers?</summary>
+          <p>Misura in centimetri la soletta estraibile di una scarpa che ti calza bene e confrontala con la misura dichiarata per la variante selezionata. Se la scheda indica la lunghezza del piede, usa quella misura per il confronto.</p>
+        </details>
+        <details>
+          <summary>Che cosa posso verificare con le foto QC?</summary>
+          <p>Le foto QC mostrano caratteristiche visibili come colore, cuciture, suola e accessori inclusi. Una foto con un righello aiuta a leggere le dimensioni. L’autenticità richiede verifiche sulla provenienza e sul venditore.</p>
+        </details>
+        <details>
+          <summary>Come stimo la spedizione in Italia?</summary>
+          <p>Inserisci il CAP di consegna e confronta i preventivi usando peso e dimensioni del pacco imballato. Verifica quali voci sono incluse e controlla gli eventuali costi di importazione prima di confermare.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <a href="https://www.cafans.com">Esplora il catalogo CAFANS</a>
+    </div>
+  </footer>
+</body>
+</html>
